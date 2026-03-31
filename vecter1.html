@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head>
+        
+        <title> LPS Vect </title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <body> 
+        <h1> Vectores </h1>
+        <p> Dentro de este lugar podras calcular vectores en base a sus magnitudes y angulos para obtener sus cordenadas cartesianas </p>
+
+        <nav class="centrado"> 
+            <u>
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="vecter1.html"> Angulo y magnitud</a></li>
+                <li><a href="sumas.html"> Suma de vectores en base a componentes</a></li>
+                <li><a href="restas.html"> Resta de vectores en base a componentes</a></li>
+            </u>
+        </nav>
+        
+        <main>
+            <section id="angmag">
+                <h2> ingresa tu angulo y magnitud </h2>
+                <form action="#">
+                    <input type="number"  id="ang" placeholder=" Angulo">
+                    <input type="number" id="mag" placeholder=" Magnitud">
+                    <button type="button"  onclick="calcangle()"> calcular </button>
+                </form>
+            </section>
+            <section id="salidacalc">
+                <label for="compx"> componente x es:</label>
+                <input type="number" id="compx" name="x" placeholder="0.00">
+                <label for="compy"> componente y es:</label>
+                <input type="number" id="compy" name="y" placeholder="0.00">
+            </section>
+        </main>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

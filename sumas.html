@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html> 
+
+    <head>
+
+        <title> LPS Vect </title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <body> 
+        <h1> Vectores </h1>
+        <p> Dentro de este lugar podras calcular vectores en base a sus magnitudes y angulos para obtener sus cordenadas cartesianas </p>
+
+        <nav class="centrado"> 
+            <ul>
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="vecter1.html"> Angulo y magnitud</a></li>
+                <li><a href="sumas.html"> Suma de vectores en base a componentes</a></li>
+                <li><a href="restas.html"> Resta de vectores en base a componentes</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="sumas">
+                <h2> ingresa tus componentes  </h2>
+                <form action="#">
+                    <input type="number" id="x1" placeholder=" componente 1x">
+                    <input type="number" id="x2" placeholder=" componente 2x">
+                    <input type="number" id="y1" placeholder=" componente 1y">
+                    <input type="number" id="y2" placeholder=" componente 2y">
+                    <button onclick="calcusuma()"  type="button"> calcular </button>
+                </form>
+            </section>
+            <section id="salidacalc">
+                <label for="sumx"> la suma de tus componentes x es:</label>
+                <input type="number" id="sumx" name="x" placeholder="0.00" readonly>
+
+                <label for="sumy"> la suma de tus componentes y es:</label>
+                <input type="number" id="sumy" name="y" placeholder="0.00" readonly>
+            </section>
+        </main>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
